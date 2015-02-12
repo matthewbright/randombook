@@ -1,0 +1,62 @@
+<div class="center">
+<h1>Show Our Stacks Some Love</h1>
+<p>
+Some text about the serendipity of finding random novels from our stacks.
+</p>
+<p><span class="more-button"><a href="javascript:window.location.href=window.location.href">Give me 6 more books!</a></span></p>
+
+<% @books.each do |book| %>
+
+<div class="book-info">
+  <h2><a href="http://library.nysoclib.org/record=<%= truncate(book.bib, :length => 8, :omission => "") %>"><%= book.title %></a></h2>
+  <h3>by <%= book.author %></h3>
+  <p class="call-no">Call number: <%= book.call_no %></p>
+  <div class="book-cover">
+    <a href="http://library.nysoclib.org/record=<%= truncate(book.bib, :length => 8, :omission => "") %>">
+      <div class="book-cover-image">
+        <img src="http://covers.openlibrary.org/b/isbn/<%= truncate(book.isbn, :length => 13, :omission => "") %>-M.jpg" border="0" alt="Open Library Cover" />
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<% end %>
+
+
+
+<!--
+
+
+<table class="listing" summary="Book list">
+  <tr class="header">
+    <th>&nbsp;</th>
+    <th>Author</th>
+    <th>Title</th>
+    <th>ISBN</th>
+    <th>Bib Number</th>
+    <th>Location</th>
+    <th>Call Number</th>
+
+  </tr>
+  <% @books.each do |book| %>
+  <tr>
+    <td><%= book.id %></td>
+    <td><%= book.author %></td>
+    <td><%= book.title %></td>
+    <td>
+      <img src="http://covers.openlibrary.org/b/isbn/<%= truncate(book.isbn, :length => 13, :omission => "") %>-M.jpg" border="0" alt="Open Library Cover" />
+    </td>
+    <td>
+      <a href="http://library.nysoclib.org/record=<%= truncate(book.bib, :length => 8, :omission => "") %>">Catalog link</a>
+         </td>
+    <td><%= book.location %></td>
+    <td><%= book.call_no %></td>
+
+  </tr>
+  <% end %>
+</table>
+
+-->
+  
+</div>

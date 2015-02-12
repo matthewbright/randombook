@@ -1,0 +1,36 @@
+<%= link_to("<<Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<h2>Create Book</h2>
+<%= form_for(:book, :url => {:action => 'create'}) do |f| %>
+  <table summary="Book form fields">
+    <tr>
+      <th>Author</th>
+      <td><%= f.text_field(:author) %></td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td><%= f.text_field(:title) %></td>
+    </tr>
+    <tr>
+      <th>ISBN</th>
+      <td><%= f.text_field(:isbn) %></td>
+    </tr>
+    <tr>
+      <th>Bib number</th>
+      <td><%= f.text_field(:bib) %></td>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <td><%= f.text_field(:location) %></td>
+    </tr>
+    <tr>
+      <th>Call number</th>
+      <td><%= f.text_field(:call_no) %></td>
+    </tr>
+</table>
+
+<div class="form-buttons">
+  <%= submit_tag("Create Book") %>
+</div>
+
+<% end %>

@@ -1,0 +1,52 @@
+// Place all the styles related to the show controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.book-info {
+  width: 29%;
+  min-width: 200px;
+  max-width: 320px;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  border-style: solid;
+  text-align: center;
+  display: inline-block;
+  *display: inline;
+  background-color:#faf8f9;
+  margin:8px;
+  padding:5px;
+  vertical-align: top;
+  zoom: 1; 
+}
+.book-cover {
+  margin: 0 auto;
+  width: 180px;
+}
+.book-cover-image {
+  background-color: #e5e5e5;
+  background-image: url("/no-cover.jpg");
+  display: inline-block;
+  width: 180px;
+  height: 271px;
+  margin: 0 auto 15px;
+}
+.call-no {
+  font-size: 0.8em;
+}
+.book-info h2 a {
+  text-decoration: none;
+}
+.more-button {
+  border-width: 2px;
+  border-color: #e5e5e5;
+  border-style: solid;
+  background-color:#faf8f9;
+  padding:10px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.more-button a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #e23aa5;
+}

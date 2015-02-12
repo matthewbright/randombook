@@ -13,11 +13,14 @@
 
 ActiveRecord::Schema.define(version: 20150211192732) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "books", force: true do |t|
     t.string   "author"
     t.string   "title"
-    t.string   "isbn",       limit: 13
-    t.string   "bib",        limit: 8
+    t.string   "isbn"
+    t.string   "bib"
     t.string   "location"
     t.string   "call_no"
     t.datetime "created_at"

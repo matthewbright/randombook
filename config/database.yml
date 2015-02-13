@@ -23,21 +23,22 @@ default: &default
 
 development:
   <<: *default
-  database: dcfi5h6absn16
+  database: de2h9d0vmrj1r3
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  username: rakbsymfxvmozz
+  username: vxudsfjhvwfbhd
 
   # The password associated with the postgres role (username).
-  password: cbIaWirRHWRTmNB1o-kLwGhU3k
+  password: GEPAYD9IoHJvXSGmsy0YPgqEoa
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: ec2-54-83-43-49.compute-1.amazonaws.com
+  host: ec2-107-22-249-214.compute-1.amazonaws.com
+  
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
@@ -80,10 +81,26 @@ test:
 #
 production:
   <<: *default
-  database: test-app_production
-  username: test-app
-  password: <%= ENV['TEST-APP_DATABASE_PASSWORD'] %>
+  database: de2h9d0vmrj1r3
 
+  # The specified database role being used to connect to postgres.
+  # To create additional roles in postgres see `$ createuser --help`.
+  # When left blank, postgres will use the default role. This is
+  # the same name as the operating system user that initialized the database.
+  username: vxudsfjhvwfbhd
+
+  # The password associated with the postgres role (username).
+  password: GEPAYD9IoHJvXSGmsy0YPgqEoa
+
+  # Connect on a TCP socket. Omitted by default since the client uses a
+  # domain socket that doesn't need configuration. Windows does not have
+  # domain sockets, so uncomment these lines.
+  host: ec2-107-22-249-214.compute-1.amazonaws.com
+  
+
+  # The TCP port the server listens on. Defaults to 5432.
+  # If your server runs on a different port number, change accordingly.
+  port: 5432
 
 
 # SQLite version 3.x

@@ -5,8 +5,8 @@ class BooksController < ApplicationController
     @books = Book.all
   end
 
-  def show
-  end
+#  def show
+#  end
 
   def new
     @book = Book.new
@@ -43,6 +43,11 @@ class BooksController < ApplicationController
     redirect_to(:action => 'index')
   end
   
+  def import
+    Book.import(params[:file])
+    redirect_to(:action => 'index')
+    #, notice: "Products imported."
+  end
   
   private
   def book_params

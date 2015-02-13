@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+
+  resources :books do
+    collection { post :import }
+  end
+ 
+
+
+
+  
   root to: 'show#index'
   
   get 'books/index'
@@ -16,6 +26,8 @@ Rails.application.routes.draw do
   get 'books/delete'
   
   get 'books/destroy'
+  
+#  get 'books/import'
 
   get 'add/index'
 
@@ -31,6 +43,10 @@ Rails.application.routes.draw do
   
   post 'books/destroy'
 
+#  post 'books/import'
+  
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

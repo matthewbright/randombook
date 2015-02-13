@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>New York Society Library - Random Books</title>
+  <title>New York Society Library - Unloved Books</title>
 <!--  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> -->
+<link data-turbolinks-track="true" href="http://nysoclib.org/sites/default/files/unlovedbooks_styles.css" media="all" rel="stylesheet" />
 <link data-turbolinks-track="true" href="http://nysoclib.org/sites/default/files/unlovedbooks.css" media="all" rel="stylesheet" />
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<CENTER>
+<TABLE WIDTH="1024">
+<TR valign=bottom><TD><A HREF="http://www.nysoclib.org"><IMG SRC="http://mail.nysoclib.org/collection.png" BORDER=0></A><A HREF="http://library.nysoclib.org"><IMG SRC="logo.png" BORDER=0></A></TD><TD>&nbsp;</TD></TR>
+  <TR valign=top><TD WIDTH=200><IMG SRC="spacer.png"></TD><TD>
 
 <%= yield %>
+    </TD>
+    </TR>
+    <TR>
+    <TD>
+      </TD>
+      <TD>
+        <P>&nbsp;<P>
+
+      </TD>
+          </TR>
+  </TABLE>
+</CENTER>
 
 </body>
 </html>

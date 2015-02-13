@@ -23,21 +23,21 @@ default: &default
 
 development:
   <<: *default
-  database: de2h9d0vmrj1r3
+  database: d9ikqrq8rmtc8k
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  username: vxudsfjhvwfbhd
+  username: zpyvrmcjzerixm
 
   # The password associated with the postgres role (username).
-  password: GEPAYD9IoHJvXSGmsy0YPgqEoa
+  password: q0mHN81vZhXBAitFD4cSiX3agG
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: ec2-107-22-249-214.compute-1.amazonaws.com
+  host: ec2-54-204-27-32.compute-1.amazonaws.com
   
 
   # The TCP port the server listens on. Defaults to 5432.
@@ -81,26 +81,27 @@ test:
 #
 production:
   <<: *default
-  database: de2h9d0vmrj1r3
+  database: d9ikqrq8rmtc8k
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  username: vxudsfjhvwfbhd
+  username: zpyvrmcjzerixm
 
   # The password associated with the postgres role (username).
-  password: GEPAYD9IoHJvXSGmsy0YPgqEoa
+  password: q0mHN81vZhXBAitFD4cSiX3agG
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: ec2-107-22-249-214.compute-1.amazonaws.com
+  host: ec2-54-204-27-32.compute-1.amazonaws.com
   
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
   port: 5432
+
 
 
 # SQLite version 3.x
